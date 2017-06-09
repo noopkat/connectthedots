@@ -240,7 +240,7 @@ d3Chart.prototype = {
                     .attr("transform", "rotate(-90)")
                     .attr("class", "y0 label")
                     .attr("text-anchor", "middle")
-                    .attr("y", -90)
+                    .attr("y", -40)
                     .attr("x", -self._height / 2)
                     .attr("dy", "1em")
                     .attr("font-size", self._fontSize + "px")
