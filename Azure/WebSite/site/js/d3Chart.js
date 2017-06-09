@@ -542,7 +542,8 @@ d3Chart.prototype = {
 						.attr("class", "line")
 						.attr("d", self._line[yAxis])
 						.style("stroke", function (d) {
-						    return self._colors(dataGUID);
+						    // temp fix 
+                return "DeepSkyBlue"; 
 						});
                 }
 
@@ -598,14 +599,14 @@ d3Chart.prototype = {
 						.attr("height", 10)
 						.attr("x", self._width + 50)
 						.attr("y", 20 + (20 * pos))
-						.style("fill", self._colors(dataGUID))
-						.style("stroke", self._colors(dataGUID));
+						.style("fill", "DeepSkyBlue")
+						.style("stroke", "DeepSkyBlue");
 
                     dataFlowVisuals.legend = self._svg.append("text")
 						.attr("x", self._width + 65)
 						.attr("y", 20 + (20 * pos) + 5)
 						.attr("class", "legend")
-						.style("fill", self._colors(dataGUID))
+						.style("fill", "DeepSkyBlue")
 						.text(dataFlow.displayName());
                 } else {
                     dataFlowVisuals.legend.text(dataFlow.displayName());
