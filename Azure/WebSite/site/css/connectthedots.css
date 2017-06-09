@@ -1,5 +1,5 @@
 body {
-    font: 16px sans-serif;
+    font: 12px sans-serif;
     color: #333;
     width: 95%;
 }
@@ -14,6 +14,8 @@ h3 {
     background-color: #f7f7f7;
     border-bottom: 1px #ddd solid;
     padding: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
 }
 
 h4 {
@@ -25,6 +27,7 @@ h4 {
 
 .big-block {
     margin-left: 10px;
+    margin-top: 30px;
 }
 
 ul {
@@ -176,14 +179,31 @@ path.line {
     top: 0;
 }
 
-#alertTable td {
+#alertTable td, #devicesTable td {
     font-size: 12px;
-    text-align: center;
+    text-align: left;
+    padding-left: 18px;
+    font-size: 16px;
 }
 
-#devicesTable td {
-    font-size: 12px;
-    text-align: center;
+#devicesTable th, #alertTable th {
+    text-align : left;
+    font-size: 16px;
+    border-bottom: 1px solid #999 !important;
+}
+
+#devicesTable, #alertTable {
+    border-bottom: none !important;
+}
+
+.dataTables_wrapper .dataTables_length {
+    margin-left: 20px !important;
+    float: right !important;
+}
+
+.dataTables_info {
+  padding-left: 18px;
+  color: #999;
 }
 
 .d3-tip {
