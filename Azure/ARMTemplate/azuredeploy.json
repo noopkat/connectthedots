@@ -45,7 +45,7 @@
     },
     "repoUrl": {
       "type": "string",
-      "defaultValue": "https://github.com/Azure/connectthedots"
+      "defaultValue": "https://github.com/noopkat/connectthedots"
     },
     "branch": {
       "type": "string",
